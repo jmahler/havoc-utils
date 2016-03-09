@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
 			waitpid(pid, NULL, 0);
 			break;
 		} else {
-			usleep(1e6/rate);
+			usleep((useconds_t) (1e6/rate));
 			continue;
 		}
 	}

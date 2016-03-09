@@ -43,7 +43,8 @@ int main(int argc, char *argv[]) {
 	int pid;
 	float rate;  /* forks / sec */
 
-	char usage[] = "usage: fbomb <fork/sec>\n       fbomb 1  # 1/sec\n";
+	char usage[] = "usage: fbomb <fork/sec>\n"
+		       "       fbomb 1  # 1/sec\n";
 
 	if (argc == 2) {
 		sscanf(argv[1], "%f", &rate);
